@@ -1,0 +1,22 @@
+{
+  "name": "XRP Ledger / Node.js Dev Environment",
+  "image": "mcr.microsoft.com/devcontainers/typescript-node:20", // Start with a Node/TS image
+  
+  "features": {
+    // Other features can be added here if needed, but the base image is solid
+  },
+
+  "postCreateCommand": "npm install -g xrp-cli",
+  
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "dbaeumer.vscode-eslint",
+        "esbenp.prettier-vscode",
+        "ms-vscode.node-debug2"
+      ]
+    }
+  },
+  
+  "forwardPorts": []
+}
